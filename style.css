@@ -108,6 +108,9 @@ body {
         justify-content: center;
         align-items: center;
     }
+        .bottom h3{
+        margin: 0;
+    }
     #features, #about {
         flex-direction: column;
     }
@@ -347,6 +350,9 @@ section {
     color: #fff; /* Text color */
     text-align: center;
 }
+    .bottom h3{
+        margin: 0;
+    }
 
 .bottom h3 a {
     font-family: "Abel", sans-serif;
