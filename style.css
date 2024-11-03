@@ -18,13 +18,14 @@ body {
 @media (max-width: 768px) {
     body{
         overflow-x: hidden;
-        margin: -1px;
+        margin: 0;
         padding: 0;
+        max-width: 100%;
     }
     .brand-logo{
         flex-direction: column;
         align-items: center;
-        margin: 0;
+        margin: -20px;
     }
     .brand-logo img{
         padding-top: 45px;
@@ -43,17 +44,13 @@ body {
 
     nav {
         flex-direction: column;
-        margin: -30px;
+        padding: 0;
+        margin: 0;
     }
 
     nav ul {
         flex-wrap: wrap;
-        margin: 20px;
-        transform: translateY(-20px);
-    }
-
-    nav ul li a {
-        font-size: 1rem;
+        margin: 10px;
     }
 
     .hero-overlay{
@@ -110,9 +107,11 @@ body {
         justify-content: center;
         align-items: center;
     }
-        .bottom h3{
+
+    .bottom h3{
         margin: 0;
     }
+
     #features, #about {
         flex-direction: column;
     }
@@ -346,15 +345,11 @@ section {
     font-size: 30px;
 }
 
-.bottom {
-    width: 100%; /* Full width */
+.bottom { /* Full width */
     background-color: #54be46; /* Choose a color */
     color: #fff; /* Text color */
     text-align: center;
 }
-    .bottom h3{
-        margin: 0;
-    }
 
 .bottom h3 a {
     font-family: "Abel", sans-serif;
@@ -362,6 +357,10 @@ section {
     color: #fff;
     text-decoration: none;
     transition: color 1s ease;
+}
+
+.bottom h3{
+    margin: 0;
 }
 
 .bottom h3 a:hover {
