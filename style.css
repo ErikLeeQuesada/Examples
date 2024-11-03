@@ -7,66 +7,66 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+    margin: auto;
+    line-height: 1.6;
+}
+
 @media (max-width: 768px) {
-    section {
-        flex-wrap: wrap;
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        text-align: center; 
-        padding: 20px;
+
+    .brand-logo{
+        flex-direction: column;
+        margin-left: -3rem;
+        align-items: center;
+    }
+    .brand-logo img{
+        padding-right: 1rem;
     }
 
+    header{
+        align-items: center;
+    }
+    section {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;  
+    }
 
     nav {
         flex-wrap: wrap;
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     nav ul {
         flex-wrap: wrap;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        padding: 0;
     }
 
     nav ul li a {
-        font-size: 20px;
-        text-align: center;
+        font-size: 1rem;
     }
 
 
     .hero {
-        width: 20%;
-        height: 70vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .hero-overlay {
-        flex-wrap: wrap;
-        width: 20%;
-        padding: 15px;
-        margin: 0 auto;
-        border-radius: 10px;
+        width: 50%;
+        height: 10rem;
         text-align: center;
     }
 
     .hero h2 {
-        font-size: 10px;
+        text-align: center;
+        font-size: 0.5rem;
     }
 
     .hero p {
-        font-size: 10px;
+        text-align: center;
+        font-size: 0.5rem;
     }
 
     .feature-content, .about-content, .contact-content {
         text-align: center;
+        flex-direction: column;
         margin-bottom: 20px;
     }
 
@@ -74,19 +74,22 @@
         flex-wrap: wrap;
         display: flex;
         justify-content: center;
-        width: 1px;
+        width: 100px;
         max-width: 300px;
+        flex-direction: column;
     }
 
     .feature-image img, .about-image img, .contact-image img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        flex-direction: column;
     }
 
     #features h2, #about h2, #contact h2 {
         font-size: 24px;
         padding-bottom: 10px;
+        flex-direction: column;
     }
 
     .bottom {
@@ -97,11 +100,22 @@
         justify-content: center;
         align-items: center;
     }
-}
-
-body {
-    margin: auto;
-    line-height: 1.6;
+    #features, #about {
+        flex-direction: column;
+    }
+    
+    #contact {
+        flex-direction: column;
+    }
+    @keyframes slideIn {
+        from {
+            margin-left: -100%; 
+        }
+        to {
+            margin-left: 50%; 
+        }
+    }
+    
 }
 
 header {
@@ -224,9 +238,10 @@ nav ul li a:hover {
 }
 
 .hero-overlay {
+    padding: 10px;
+    text-wrap: pretty;
     position: relative;
-    width: 30%;
-    height: 24vh;
+    height: 40vh;
     color: #fff;
     background: rgba(40, 92, 38, 0.486); 
     text-align: center;
