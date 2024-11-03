@@ -211,6 +211,7 @@ nav ul li a:hover {
 .hero {
     position: relative;
     background-image: url('Office1.jpg');
+    background-color: #165e00;
     width: auto;
     height: 100vh;
     background-size: cover;
