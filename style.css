@@ -16,7 +16,9 @@ body {
 }
 
 @media (max-width: 768px) {
-
+    body{
+        overflow-x: hidden;
+    }
     .brand-logo{
         flex-direction: column;
         align-items: center;
@@ -52,7 +54,9 @@ body {
         font-size: 1rem;
     }
 
-
+    .hero-overlay{
+        transform: translateY(60px);
+    }
     .hero {
         text-align: center;
         padding-bottom:400px;
@@ -246,20 +250,22 @@ nav ul li a:hover {
     background: rgba(40, 92, 38, 0.486); 
     text-align: center;
     margin-left: -100%; 
-    animation: slideIn 2s forwards;
+    animation: slideIn 1.5s forwards;
     border-radius: 20px;
 }
 
 .hero h2 {
-    padding: 0;
+    padding: 1px;
     font-size: 3em;
     font-weight: 600;
+    margin-top: 0px;
 }
 
 .hero p {
     font-size: 1.5em;
     margin-bottom: 20px;
     font-weight: 500;
+    margin-top: -50px;
 }
 
 .btn {
