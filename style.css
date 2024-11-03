@@ -2,7 +2,6 @@
     font-family: "Abel", sans-serif;
     font-weight: 500;
     font-style: normal;  
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -21,25 +20,32 @@ body {
     .brand-logo{
         flex-direction: column;
         align-items: center;
+        margin: 0;
     }
     .brand-logo img{
-        padding: 0;
+        padding-top: 45px;
+
     }
 
-    header{
-        padding: 1px;
-        align-items: center;
+    .brand-logo h3{
+        padding-top: 40px;
+        margin: 0px;
+    }
+
+    #header {
+        padding: 5px;
+        font-size: 1rem;
     }
 
     nav {
-        flex-wrap: wrap;
-        display: flex;
         flex-direction: column;
+        margin: -30px;
     }
 
     nav ul {
         flex-wrap: wrap;
-        margin-right: 0;
+        margin: 20px;
+        transform: translateY(-20px);
     }
 
     nav ul li a {
@@ -48,10 +54,9 @@ body {
 
 
     .hero {
-        width: 60%;
-        height: 10rem;
         text-align: center;
-        padding: auto;
+        padding-bottom:400px;
+
     }
 
     .hero h2 {
@@ -120,8 +125,7 @@ body {
 header {
     background: #54be46;
     color: #fff;
-    padding: 5px;
-    text-align: center;
+    padding: 1px 5px 1px 5px;
 }
 
 nav {
@@ -141,7 +145,7 @@ nav {
 }
 
 .brand-logo h3{
-    font-size: 20px;
+    font-size: 22px;
     padding: 5px;
 }
 
@@ -238,19 +242,17 @@ nav ul li a:hover {
     padding: 10px;
     text-wrap: pretty;
     position: relative;
-    height: 40vh;
     color: #fff;
     background: rgba(40, 92, 38, 0.486); 
     text-align: center;
     margin-left: -100%; 
-    animation: slideIn 3s forwards;
+    animation: slideIn 2s forwards;
     border-radius: 20px;
 }
 
 .hero h2 {
-    margin-top: 10px;
+    padding: 0;
     font-size: 3em;
-    margin-bottom: 10px;
     font-weight: 600;
 }
 
@@ -291,7 +293,7 @@ section#contact {
         margin-left: -100%; 
     }
     to {
-        margin-left: 10%; 
+        margin-left: 0%; 
     }
 }
 
