@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
             currentImageIndex = (currentImageIndex + 1) % images.length;
             hero.style.backgroundImage = `url('${images[currentImageIndex]}')`;
             hero.classList.remove('hidden'); // Trigger fade-in
-        }, 1000); // Delay for fade-out duration
+        }, 3000); // Delay for fade-out duration
     }, 7000); // Image Transition every 7 seconds 
 });
 
