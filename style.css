@@ -7,6 +7,98 @@
     box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+    section {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        padding: 20px;
+    }
+
+
+    nav {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+    .hero {
+        width: 20%;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-overlay {
+        flex-wrap: wrap;
+        width: 20%;
+        padding: 15px;
+        margin: 0 auto;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 10px;
+    }
+
+    .hero p {
+        font-size: 10px;
+    }
+
+    .feature-content, .about-content, .contact-content {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .feature-image, .about-image, .contact-image {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        width: 1px;
+        max-width: 300px;
+    }
+
+    .feature-image img, .about-image img, .contact-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    #features h2, #about h2, #contact h2 {
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+
+    .bottom {
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 body {
     margin: auto;
     line-height: 1.6;
