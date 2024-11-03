@@ -18,6 +18,8 @@ body {
 @media (max-width: 768px) {
     body{
         overflow-x: hidden;
+        margin: -1px;
+        padding: 0;
     }
     .brand-logo{
         flex-direction: column;
