@@ -54,11 +54,47 @@ body {
     }
 
     .hero-overlay{
-        transform: translateY(100px);
+        transform: translateY(-20px);
     }
-    .hero {
+
+    .hero{
+        width: 100%;
+        height: 80vh;
         background-color: #165e009c;
+        overflow: hidden;
+        position: relative;
+        background-image: url(Office1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: change 40s infinite ease-in-out;
     }
+    
+    @keyframes change{
+    0%
+    {
+        background-image: url(Office1.jpg);
+    }
+    20%
+    {
+        background-image: url(Office2.jpg);
+    }
+    40%
+    {
+        background-image: url(Office3.jpg);
+    }
+    60%
+    {
+        background-image: url(Office4.jpg);
+    }
+    80%
+    {
+        background-image: url(Office5.jpg);
+    }
+    100%
+    {
+        background-image: url(Office6.jpg);
+    }}
 
     .hero h2 {
         text-align: center;
@@ -205,6 +241,47 @@ nav ul li a:hover {
     transform: scale(1.1); 
 }
 
+
+/* .hero {
+        position: relative;
+        background-image: url('Office1.jpg');
+        background-color: #165e00;
+        width: auto;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        animation: holdImage 3s linear forwards, moveBackground 30s linear infinite;
+        transition: background-image 3s ease-in-out, opacity 3s ease-in-out; 
+        opacity: 1; 
+}
+
+.hidden {
+    opacity: 0; 
+}
+
+@keyframes holdImage {
+    0% {
+        background-position: center; 
+    }
+    100% {
+        background-position: center;
+    }
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: center; 
+    }
+    100% {
+        background-position: bottom right; 
+    }
+}
+
+
+.background-transition {
+    transition: background-image 1s ease-in-out; 
+} */
+
 .hero{
     width: 100%;
     height: 80vh;
@@ -309,20 +386,20 @@ section#contact {
 section {
     display: flex;
     align-items: center;
-    gap: 20px; 
+    gap: 20px; /* Adjust space between image and text */
     padding: 40px;
 }
 
 .feature-image, .about-image, .contact-image {
     flex: 1;
-    max-width: 600px; 
+    max-width: 600px; /* Adjust as needed */
 }
 
 .feature-image img, .about-image img, .contact-image img {
     width: 100%;
     height: auto;
     box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
+    border-radius: 10px; /* Optional for style consistency */
 }
 
 .feature-content, .about-content, .contact-content {
@@ -344,9 +421,9 @@ section {
     font-size: 30px;
 }
 
-.bottom { 
-    background-color: #54be46;
-    color: #fff;
+.bottom { /* Full width */
+    background-color: #54be46; /* Choose a color */
+    color: #fff; /* Text color */
     text-align: center;
 }
 
