@@ -57,9 +57,7 @@ body {
         transform: translateY(100px);
     }
     .hero {
-        text-align: center;
-        padding-bottom:400px;
-
+        background-color: #165e009c;
     }
 
     .hero h2 {
