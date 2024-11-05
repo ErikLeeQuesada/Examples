@@ -203,6 +203,7 @@ nav ul li a:hover {
     height: 80vh;
     overflow: hidden;
     position: relative;
+    background-color: #165e009c;
     background-image: url(Office1.jpg);
     background-position: center;
     background-repeat: no-repeat;
