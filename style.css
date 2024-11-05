@@ -207,7 +207,7 @@ nav ul li a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: change 40s infinite ease-in-out;
+    animation: change 70s infinite ease-in-out;
 }
 
 @keyframes change{
